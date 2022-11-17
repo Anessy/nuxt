@@ -1,6 +1,17 @@
 <template>
   <div>
-    <nuxt-link to="/users">users</nuxt-link>
+    <section>
+      Add new words
+      <nuxt-link to="/addingNewWords">Go to</nuxt-link>
+    </section>
+    <section>
+      View the dictionary
+      <nuxt-link to="/dictionary">Go to</nuxt-link>
+    </section>
+    <section>
+      Learn new words
+      <nuxt-link :to="'/learning/' + 1">Go to</nuxt-link>
+    </section>
   </div>
 </template>
 
